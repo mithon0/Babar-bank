@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-sky-300">
+    <header>
+        <h1 class="text-6xl text-center semifont-bold mt-10">Get some <span
+                class="text-blue-800 font-bold">Moooooooney</span></h1>
+    </header>
+    <section class="mt-10">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto ">
+            <div class="p-8 rounded-lg bg-blue-900 text-center text-white">
+                <h2  class="text-xl">Diposite</h2>
+                <h3 class="text-4xl">$<span id="diposite-output">00</span></h3>
+            </div>
+            <div class="p-8 rounded-lg bg-green-900 text-center text-white">
+                <h2 class="text-xl">Withdraw</h2>
+                <h3 class="text-4xl">$00</h3>
+            </div>
+            <div class="p-8 rounded-lg bg-yellow-900 text-center text-white">
+                <h2 class="text-xl">Ballance</h2>
+                <h3 class="text-4xl">$1200</h3>
+            </div>
+        </div>
+    </section>
+    <section class="mt-20 ">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mx-auto">
+            <div class="rounded-lg bg-violet-900 text-center text-white p-8">
+                <h1 class="pb-5 text-4xl text-center">Please deposite</h1>
+                <input id="diposite-input" class="rounded-lg w-3/5 mx-auto block mb-2 px-4 py-2 text-black " placeholder="Amount you want to diposite" type="number">
+                <button id="diposite-btn" class="bg-pink-600 mx-auto border-2 rounded-sm border-lime-600 mt-2 px-10 py-2 mt-10 content-center flex self-auto hover:bg-amber-500 text-white">Deposit</button>
+            </div>
+            <div class="rounded-lg bg-indigo-900 text-center text-white p-8">
+                <h1 class="pb-5 text-4xl text-center">Please Withdraw</h1>
+                <input class="rounded-lg w-3/5 mx-auto block mb-2 px-4 py-2 text-black" placeholder="Amount you want to Withdraw" type="number">
+                <button class="bg-pink-600 mx-auto border-2 rounded-sm border-lime-600 mt-2 px-10 py-2 mt-10 content-center flex self-auto hover:bg-amber-500 text-white">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
